@@ -12,7 +12,7 @@ LiquidCrystal_I2C lcd(0x27,20,4);
 
 //Constants
 const String title = "Meteo";
-const int splashScreenDur = 5000;
+const int splashScreenDur = 2000;
 
 //degree sign
 byte degree[8]={

@@ -8,14 +8,13 @@ void setup() {
     lcd.setCursor(3,0);
     lcd.print(title); 
   }
-  while(millis() < 10000){
+    lcd.init();
+  while(millis() < 4000){
     //error managing
     if(si7021.initialize()){
-      lcd.init();
       lcd.setCursor(1,0);
       lcd.print("My sensor works!");
     }else{
-      lcd.init();
       lcd.setCursor(1,0);
       lcd.print("No sensor..:(");
       while(1) {};
