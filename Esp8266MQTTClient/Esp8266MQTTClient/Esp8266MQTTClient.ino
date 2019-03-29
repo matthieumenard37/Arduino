@@ -1,21 +1,22 @@
 #include "ArduinoJson.h"
 #include "EspMQTTClient.h"
+
 void onConnectionEstablished();
 EspMQTTClient client(
-  "iPhone",                 // Wifi ssid
-  "mormek5700",                 // Wifi password
+  "OnePlus 3T",                 // Wifi ssid
+  "8ea1f2c1878f",                 // Wifi password
   onConnectionEstablished,// Connection established callback
   "mycube.dscloud.me",                   // MQTT broker ip
   1884,                   // MQTT broker port
   "dietpi",              // MQTT username
   "infected",             // MQTT password
-  "mathieu.matthieu.mohamed",                 // Client name
+  "3M",                 // Client name
   true,                   // Enable web updater
   true                    // Enable debug messages
 );
 
-String temp = "temp";
-String value = "25.3";
+String temp = "3M_temp";
+String value = "27.5";
 char myOutput[100];
 
 
